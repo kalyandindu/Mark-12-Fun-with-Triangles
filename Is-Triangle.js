@@ -1,14 +1,11 @@
-var angleOne = document.querySelector("#angle-one");
-var angleTwo = document.querySelector("#angle-two");
-var angleThree = document.querySelector("#angle-three");
+var angle = document.querySelectorAll(".angle-input");
 var button = document.querySelector("#btn-click");
 var outputContainer = document.querySelector("#output-container");
 
 button.addEventListener("click", isTriangle);
 
 function isTriangle(){
-    var total =  calculateSumOfAngles(angleOne.value, angleTwo.value, angleThree.value)
-    console.log(typeof(total));
+    var total =  calculateSumOfAngles(angle[0].value, angle[1].value, angle[2].value)
     if(total === 180){
         outputContainer.innerHTML = "Yes!, Given angles form a Triangle" ;
     }
