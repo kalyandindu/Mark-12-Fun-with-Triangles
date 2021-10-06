@@ -27,6 +27,12 @@ body{
     margin: 0.3rem;
     font-size: large;
 }
+.li-no-decor{
+    text-decoration: none;
+}
+.link-active{
+    font-weight: bold;
+}
 
 .header-heading{
     font-size: x-large;
